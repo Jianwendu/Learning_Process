@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>Learning Platform for Record</title>
+    <article title="2022/0127, Formatting">
+        <strong>加粗1，同《b》</strong>
+        <b>加粗2</b>
+        <hr>
+        <i>斜杠1</i>
+        <em>斜杠2</em>
+        <hr>
+        <small>Small: Define smaller text</small>
+        <hr>
+        <mark style = 'background-color: aquamarine'>Mark: text highlighted</mark>
+        <hr>
+        <del>del: defines text that has been deleted 删除划线</del>
+        <hr>
+        <ins>ins: defines a text that has been inserted into a document下划线</ins>
+        <hr>
+        <sub>Sub: defines subscript text下标</sub>
+        <hr>
+        <sup>Sup:上划线</sup>
+        <hr>
+    </article>
+    <article title='Quotation'>
+        <blockquote cite='www.google.com'>
+            Blockquoto: defines a section that is quoted from another source.
+        </blockquote>
+        <hr>
+        <q>q: 引用</q>
+        <hr>
+        <p>Function:<abbr title="这个功能可用作附加解释">abbr</abbr></p>
+        <p>搞不明白什么应用场景</p>
+        <hr>
+        <address>Address: dfeins contract information</address>
+        <p>跟em一个效果，没啥卵用</p>
+        <hr>
+        <cite>cite</cite>
+        <p>显示效果上看，跟em一样</p>
+        <bdo dir="rtl">bdo: 调整文字显示顺序，dic是提供方向,ltr,rtl,auto</bdo>
+    </article>
+    <article title='comments'>
+        <!-- 类似于Python#的功能，写注释 -->
+        <p>This is a paragraph.</p>
+        <hr>
+        <!-- 备注：今天是看A股笑话的一天 -->
+        <!--
+            可以随便写注释，或者隐藏内容
+        -->
+    </article>
+    <article title="Colors">
+        <!-- 总共有三种color: color(text),background-color, border -->
+        <p style='border: 2px solid Tomato'>Show border's width, style and color</p>
+        <hr>
+        <!-- 设置color value, rgb(XX,XX,xx),#ff6347, hsl(9,100%,64%) 同ps的原理-->
+        <p style='background-color: #ff2222;'>Set color value</p>
+    </article>
+    <article title='CSS'>
+        <!-- Cascading Style Sheets (CSS) is used to format the layout of a webpage.-->
+        <!-- CSS can be added to HTML document in 3 way:
+            1.Inline: using style inside HTML elements
+            2.Internal: by using <style> element in the <head> section
+            3.External: by using a <link> element to link to an external CSS file
+        -->
+        <!-- 第二种方法展示：
+            <head>
+                <style>
+                body {background-color: powderblue;}
+                h1   {color: blue;}
+                p    {color: red;}
+                </style>
+            </head>
+        -->
+        <!-- 第三种方法，需要同第二步，在<head>section里加一个link命令:
+            <head>
+                <link rel="stylesheet(必选，且只有一个)" href="style.css（同<a>）">
+            </head>
+            类似于将第二种方法的style内容另存一个新的文件，直接对应body里一种tag进行格式调整
+        -->
+        <!--CSS一般可以调整的功能命令总结
+            1. color: <color> <background-color><border>(同时设置三个参数)
+            2. font-family: 调整字体
+            3. font-size: 调整字体大小
+            4. Border: 2px solid white 宽度，格式，颜色
+            5. padding:  defines a padding (space) between the text and the border 调整边框和字体间的空间宽度
+            6. margin: defines a margin (space) outside the border. 调整边框向外扩展的宽度
+               margin-inline-end: 适应书写顺序，边缘加在结束的地方
+
+        -->
+    </article>
+</body>
+</html>

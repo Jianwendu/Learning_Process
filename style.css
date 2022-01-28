@@ -1,0 +1,6 @@
+body {background-color: black;}
+h1 {color: white;}
+p {color:white;
+    padding:10px;
+    margin-inline-end: 40px;
+    border:2px solid yellow}
