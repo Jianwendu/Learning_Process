@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th {
+            color: white;
+            background-color:black;
+            padding:2px;
+        }
+        table, th, td {border:px solid black;
+                    border-collapse: collapse;
+                    border-radius: 10px;}
+        tr:nth-child(even) {background-color: burlywood;}
+
+    </style>
+</head>
+<body>
+    <div>
+        <!-- <Table> define table
+            <tr> define row
+            <td> define cell data
+            <th> define a header cell in table
+        -->
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Industry</th>
+        </tr>
+        <tr>
+            <td>Jame</td>
+            <td>Real Estate</td>
+        </tr>
+        <!--避免双重border，用border-collapse-->
+        <!--border-radius: 倒角使用-->
+        <!--
+            <border-style>
+            dotted:点
+            dashed: 虚线
+            solid
+            double
+            groove：凹槽
+            inset:内陷
+            outset:外凸
+            ridge: 类似带阴影的感觉
+            <border-color>
+        -->
+    </table>
+    <hr>
+    <table style='width:300px'>
+        <!-- table可以设置宽度
+        使用style功能
+    -->
+    <caption>Table Name</caption>
+    <tr>
+        <th>Name</th>
+        <th>Industry</th>
+    </tr>
+    <tr>
+        <td>Jame</td>
+        <td>Real Estate</td>
+    </tr>
+    <tr>
+        <td>Tom</td>
+        <td>Real Estate</td>
+    </tr>
+    <tr>
+        <td>Lack</td>
+        <td>Real Estate</td>
+    </tr>
+    <!--
+        <th colspan='2'> 合并的功能
+            rowspan='2' 行合并，在一个tr里填后，下一行不用填
+    -->
+    <!-- <border-spacing> 改变cell之间的大小-->
+    <!--间隔颜色填充
+    tr: nth-child(even)  行的间隔填充
+    td:nth-child(even) th:nth-child(even) column的间隔填充
+    -->
+    <!--tr:hover {background-color: #D6EEEE;}
+    Use the :hover selector on tr to highlight table rows on mouse over:
+    -->
+    <hr>
+    <!--
+        <colgroup> 定义颜色组团 - 针对column
+        <col span='number_defined' style='color'> 组团元素，span代表选择几个column
+        style = 'visibility:collapse' 隐藏column
+    -->
+    </table>
+    </div>
+</body>
+</html>

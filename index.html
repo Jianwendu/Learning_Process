@@ -96,9 +96,61 @@
     </article>
     <hr>
     <article title='2022/0128,Links'>
-
+        <a href="www.baidu.com">Links: tag</a>
+        <!--
+            默认，点击link会在当前页打开，如果要另起一页打开需要target命令
+            target: 
+            _self:默认，当前页
+            _blank：新的窗口
+            _parent：Opens the document in the parent frame
+            _top：Opens the document in the full body of the window
+        -->
+        <!--
+            相对路径：在同意文件夹里，就是文件名.html;在其它子文件夹里，需要在加上文件夹名字
+            绝对路径
+        -->
+        <!-- 用 icon作为超链接，使用JavaScript
+        JavaScript allows you to specify what happens at certain events, such as a click of a button
+        -->
+        <button onclick="document.location='default.asp'">Print Here!</button>
+        <hr>
+        <!-- 调节link的显示
+            1. 颜色
+            <style>
+            a:link {
+                    color: green;
+                    background-color: transparent;
+                    text-decoration: none;
+                    } 代表未被访问
+            a:visited {
+                    color: pink;
+                    background-color: transparent;
+                    text-decoration: none;
+                    } 代表已被访问
+            a:hover {
+                    color: red;
+                    background-color: transparent;
+                    text-decoration: underline;
+                    } 鼠标碰触
+            a:active {
+                    color: yellow;
+                    background-color: transparent;
+                    text-decoration: underline;
+                    } 代表可以active状态
+            </style>
+        -->
+        <hr>
+        <!--
+            Bookmark: 页内跳转
+            1. 设定bookmar标识
+            <h1 id='mark1'>Chapter 4</h1>
+            2. 设定跳转链接
+            <a href='#mark1'>Jump to Chapter 4</a>
+        -->
+        <h1 id="mark1">Chapter 4</h1>
+        <a href="#mark1">Jump to Chapter4</a>
     </article>
-    <article title='2022/0128,Image'>
+    <article title='Image'>
         <!-- 
             <img> is empty, contains attributes only
             Have three attributes:
@@ -112,6 +164,50 @@
         <!--
             <img style = "float:left/right"> 控制图片位于文字的方位
         -->
+        <hr>
+        <!--
+            <map>
+            <img> src: defines来源 alt:definename usemap="#map_name":定义使用的地图
+            <map name="map_name">
+                <area shape="rect" coords="34, 44, 270, 350" href="computer.htm">
+                shape = rect,poly,circle
+                coords坐标，href 点击后的链接
+                还可以继续附加JAVASCRIPT的点击功能，onclick="myFunction()"
+                <script>
+                    function myFunction() {alert('You cliked the coffee cup')}
+                </script>
+         -->
+         <hr>
+         <!--
+             <p style='background-color:url('image_name.jpg');
+             background-repeat:no-repeat';
+             background-attachment: fixed;
+             background-size: cover/ 100% 100%;
+             >
+            为P tag设置图片背景
+            background-repeat:防止因图片像素小而出现重复的现象，默认保持原比例
+            background-attachment: make sure tag元素全覆盖
+            background-size: image放大以覆盖整个tag；也可也直接设置缩放比例
+         -->
+         <hr>
+         <!--
+             <picture >Defines a container for multiple image resources
+            <picture>
+                <source srcset="img_avatar.png">
+                <source srcset="img_girl.jpg">
+                <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+            </picture>
+            默认 把第一个sourced当作使用的资源
+                <srcset> 同img的src
+                <media> 设置source的使用条件，比如min/max-width
+         -->
+    </article>
+    <article title='Favicon'>
+        <!-- favicon 是加给网站的小图标 -->
+        <a href="Favicon_test.html">Favicon - html</a>
+    </article>
+    <article title='Tables'>
+        <a href="table_test.html">See table in additional link.</a>
     </article>
 </body>
 </html>
