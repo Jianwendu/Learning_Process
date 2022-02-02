@@ -5,4 +5,4 @@ body {
     font-family:'Roboto', sans-serif;
     font-weight: 400;
 }
-a:hover {color:black;}
+a, a:hover {color:black;}
