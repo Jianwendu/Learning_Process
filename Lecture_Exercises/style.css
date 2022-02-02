@@ -1,0 +1,8 @@
+body {
+    background-color: yellow;
+    color:black;
+    margin:40px;
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+}
+a:hover {color:black;}
