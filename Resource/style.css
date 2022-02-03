@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 
-body {
-    margin:50px auto;
-    width:70%;
-    background-color:#61BFAD;
-  }
-
-  a {text-decoration: none;
+a {text-decoration: none;
     color:white;
     font-size: 15px;
     transition: font-size 1s;
@@ -21,29 +15,19 @@ a:hover {
     background-color: black;
 }
 
+body {
+    margin:50px auto;
+    width:70%;
+    background-color:#61BFAD;
+  }
+
 h1 {color:white;
-    transition: font-size 1s, color 1s, background-color 1s;
+    transition: font-size 1s;
     font-family: 'Roboto', sans-serif;
     font-size:40px;}
 
 h1:hover {
     font-size:60px;
-    color:#112378;
-    background-color: yellow;
-}
-
-h3 {
-    color:white;
-    font-family: 'Roboto', sans-serif;
-    transition: font-size 1s;
-}
-
-h3:hover {
-    font-size:30px;
-}
-
-li {
-    color:white;
 }
 
 .superlink {
