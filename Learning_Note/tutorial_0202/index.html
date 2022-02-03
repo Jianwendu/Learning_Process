@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 三种LIST：
+        1. <ul> unordered list
+        2. <ol> ordered list
+        3. <dl> description list: 可以另外附加一段描述内容 
+            <dt> defines the term name, <dd> describe each term      
+    -->
+    <dl>
+        <dt>Coffee</dt>
+        <dd>Most favorate drink</dd>
+        <dt>Tea</dt>
+        <dd>drink I am drinking now</dd>
+    </dl>
+    <hr>
+    <!--
+        CSS: list-style-type property can define the icon before list content
+        disc: 默认
+        circle: circle with white
+        square
+        none
+        li float property: left 让列左右排列
+    -->
+    <ul style='list-style-type: circle;'>
+        <li>Coffee</li>
+        <li>Tea</li>
+    </ul>
+    <hr>
+    <!-- type 可以改变<ol>样式
+        1: number
+        A: uppercase letters
+        a: lowercase letters
+        I: uppercase roman numbers
+        i: lowercase roman numbers
+        start: 调整起始数据
+        -->
+    <ol type="a" start="2">
+        <li>C</li>
+        <li>B</li>
+    </ol>
+    <hr>
+    <article class='block & inline'>
+        <!--
+            block-level: top/bottom margin, inline 没有 
+            tag: <div> <header> <article> <li> <main> <dd> <aside> <p> <section> <table>
+            inline-level: does not start on a new line 
+            <span>
+        -->
+        <div>
+            <p>test</p>
+        </div>
+        <span>下次问一下:margin-left 与 margin-inline-start的区别</span>
+    </article>
+    <article class='class'>
+        <!--
+            .class_name: define style
+        -->
+    </article>
+    <article class = 'id'>
+        <!--
+            id：独立存在，只能使用一次
+            #id_name: access
+        -->
+    </article>
+    <article class='iframe'>
+        <!--
+            <iframe> tag: 在html里面再嵌套一个html
+            <iframe src='url' title='name_title'></iframe>
+            可以额外设置长宽高，以及默认有border(border:none去除)
+            target property & name: 两者吻合后，点击链接后将在frame里出现
+        -->
+        <a href="" target="iframe_name" >HA</a>
+        <a href="index.html" target='_blank'>HA</a>
+    </article>
+</body>
+</html>
