@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;1000&display=swap');
+
+
+body {
+    height: 100%;
+    height: 100vh;
+    width:90%;
+    padding: 40px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.3;
+    margin: auto;
+    word-spacing: -0.003em; /*！改变字间距*/
+  }
+
+h1 {
+    text-transform:uppercase;
+    font-size:24px;
+    width: 180px;
+    margin-bottom:0.3em;
+}
+
+a.header {
+    color:black;
+    text-decoration: none;
+    transition: 1s;
+}
+
+a.header:hover {
+    font-size:30px;
+    background-color: black;
+    color:white;
+}
+
+/*! 设置category颜色系统 */
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+  }
+
+.site-categories button {
+    appearance: none;
+    display: block;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin-bottom: 0.3em;
+    cursor: pointer;
+    transition: 120ms;
+  }
+.site-categories .work {
+    color: #e54b4b;
+  }
+.site-categories .education {
+    color: #00cc00;
+  }
+.site-categories .memory {
+    color: #0000ff;
+  }
+.site-categories .interest {
+    color: #055a5b;
+  }
+.site-categories .insight {
+    color: #e88565;
+  }
+.site-categories .source {
+    color: #674b7c;
+  }
+
+  .site-categories[data-currentCategory=work] button {
+    color: #a9a9a9;
+  }
+  .site-categories[data-currentCategory=work] .work {
+    color: #ff0000;
+  }
+
+/*! Note: Search Function 
+    未解决的问题：点击搜索框后，如何placeholder字母 消失
+*/
+
+  .site-search {
+    display: flex;
+    margin-bottom: 1.45rem;
+  }
+
+  .input-search {
+    appearance: none;
+    border: 0;
+    display: block;
+    font-family: inherit;
+    outline: 0;
+    border: 0;
+    font-size:inherit;
+    color: #a9a9a9;
+    position: relative;
+    padding: 0;
+    transition: color 120ms;
+  }
+
+  .search-cancel {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    color: #a9a9a9;
+    font-size: 14px;
+    opacity: 0;
+    cursor: pointer;
+    transition: 120ms;
+    visibility: hidden;
+  }
+
+
+.input-search::placeholder {
+    color: #a9a9a9;
+}
+
+.input-search:focus + .input-search {
+    color:white;
+}
+
+  .input-search:focus + .search-cancel {
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+
+/*! Note: 改变超链接 */
+
+.link-container {
+    padding:0;
+}
+
+.link-container a {
+    text-decoration: none;
+    color:#a9a9a9;
+    font-weight:bold;
+}
+
+li {
+    display:inline;
+}
+
+.link-container a:after {
+    content:',';
+}
+
+.link-container a.work:hover {
+    color:#e54b4b;
+    transition: 120ms;
+}
+
+.link-container a.education:hover {
+    color:#00cc00;
+    transition: 120ms;
+}
+
+.link-container a.memory:hover {
+    color:#0000ff;
+    transition: 120ms;
+}
+
+.link-container a.interest:hover {
+    color:#055a5b;
+    transition: 120ms;
+}
+
+.link-container a.insight:hover {
+    color:#e88565;
+    transition: 120ms;
+}
+
+.link-container a.source:hover {
+    color:#674b7c;
+    transition: 120ms;
+}
+
+
+
+/*! 
+  Problem:
+  1. data- 功能如何实现；
+  2. 搜索功能如何实现；
+*/
