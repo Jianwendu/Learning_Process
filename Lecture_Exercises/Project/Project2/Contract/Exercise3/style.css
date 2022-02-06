@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@400;900&display=swap');
+
+body {
+    width: 80%;
+    margin:10px auto;
+    padding:5px;
+}
+
+h1 {color:#112378;
+    transition: font-size 1s, color 1s, background-color 1s;
+    font-family: 'Roboto', sans-serif;
+    font-size:40px;}
+
+h1:hover {
+    font-size:60px;
+    color: white;
+    background-color: black;
+}
+
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+}
+
+h3:hover {
+    text-decoration: underline;
+    font-style: italic;
+    transition: font-style 10s;
+    font-weight:600;
+}
+
+p {
+    font-family:'PT Sans', sans-serif;
+    padding:0;
+}
+
+p:hover {
+    color:#112378;
+    padding:30px;
+    line-height: 1.5em;
+    font-weight:500;
+    font-family: 'PT Sans', sans-serif;
+    transition: color 1s, padding 1s;
+}
+
+a {
+    text-decoration: none;
+    font-size:10px;
+    color:black;
+}
+
+a:hover {
+    background-color: black;
+    color:white;
+    text-decoration: underline;
+}

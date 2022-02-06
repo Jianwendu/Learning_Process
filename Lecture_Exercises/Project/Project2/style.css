@@ -73,6 +73,7 @@ button {
     transition: 120ms;
   }
 
+/*! 设置图标颜色 */
 
 .site-categories button.work {
     color: #e54b4b;
@@ -93,11 +94,20 @@ button {
     color: #674b7c;
   }
 
+/*！设置图表颜色变化 */
+
   .site-categories[data-currentCategory=work] button {
     color: #a9a9a9;
   }
   .site-categories[data-currentCategory=work] .work {
     color: #ff0000;
+  }
+
+  .site-categories[data-currentCategory=education] button {
+    color: #a9a9a9;
+  }
+  .site-categories[data-currentCategory=education] .education {
+    color: #00cc00;
   }
 
 /*! Note: Search Function 
