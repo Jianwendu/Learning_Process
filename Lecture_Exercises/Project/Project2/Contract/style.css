@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;1000&display=swap');
+
+
+body {
+    height: 100%;
+    height: 100vh;
+    width:90%;
+    padding: 40px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.3;
+    margin: auto;
+    word-spacing: -0.003em; /*！改变字间距*/
+  }
+
+/*! 设置header*/
+
+h1 {
+    text-transform:uppercase;
+    font-size:24px;
+    width: 180px;
+    margin-bottom:0.3em;
+}
+
+a.header {
+    color:black;
+    text-decoration: none;
+    transition: 1s;
+}
+
+a.header:hover {
+    font-size:30px;
+    background-color: black;
+    color:white;
+}
+
+/*！设置button */ 
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+  }
+
+.site-categories button {
+    display:block;
+    background: transparent;
+    border:0;
+    margin-bottom: 0.3em;
+    padding:0;
+}
+
+.site-categories .contact a{
+    text-decoration: none;
+    color:black;
+}
+
+.site-categories .biography a{
+    text-decoration: none;
+    color: #a9a9a9;;
+}
+
+.site-categories .notification a{
+    text-decoration: none;
+    color: #a9a9a9;;
+}
+
+.site-categories .notification {
+    margin-bottom: 3rem;
+}

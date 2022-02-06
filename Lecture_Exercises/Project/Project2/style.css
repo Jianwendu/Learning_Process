@@ -38,32 +38,58 @@ button {
     font-size:16px;
   }
 
-.site-categories button {
+
+.button-more {
+    background: transparent;
+    display:inline;
+    border:0;
+    padding:0;
+    cursor: pointer;
     appearance: none;
-    display: block;
+    opacity: 0;
+    transition: 120ms;
+  }
+
+.site-categories button.main-page:focus + .button-more {
+    opacity: 1;
+}
+
+.button-more a {
+  color:#a9a9a9;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+
+.site-categories button.main-page {
+    appearance: none;
+    display: inline-block;
     background: transparent;
     border: 0;
     padding: 0;
     margin-bottom: 0.3em;
+    block-size:20px;
     cursor: pointer;
     transition: 120ms;
   }
-.site-categories .work {
+
+
+.site-categories button.work {
     color: #e54b4b;
   }
-.site-categories .education {
+.site-categories button.education {
     color: #00cc00;
   }
-.site-categories .memory {
+.site-categories button.memory {
     color: #0000ff;
   }
-.site-categories .interest {
+.site-categories button.interest {
     color: #055a5b;
   }
-.site-categories .insight {
+.site-categories button.insight {
     color: #e88565;
   }
-.site-categories .source {
+.site-categories button.source {
     color: #674b7c;
   }
 
