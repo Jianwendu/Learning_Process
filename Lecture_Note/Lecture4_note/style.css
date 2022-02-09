@@ -1,0 +1,27 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    padding:40px;
+    margin-top:30px;
+}
+
+.container {
+    display:flex;
+    Flex-direction: row;
+    height:200px;
+    background-color: azure;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.item {
+    padding:20px;
+    background-color: black;
+    color:white;
+    text-align:center;
+    align-items:center;
+}
