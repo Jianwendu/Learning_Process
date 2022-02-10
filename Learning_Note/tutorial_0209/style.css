@@ -1,0 +1,41 @@
+.container {
+    display:grid;
+    background-color: black;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px,auto);
+    gap:30px 30px;
+}
+
+/* 
+    gap:value1 value2 value1调整row-gap,value2调整column-gap
+    gird-template-column/row 主动设置行列的数量及size
+    grid-auto-column/row 调整自主生成的行列数量及size
+    grid-column/row 基于行列线设置gutter area （可以理解为单元格大小）
+    z-index：数字越高，在前面 
+*/
+
+
+
+.item {
+    color:white;
+    margin:1em;
+    background-color: yellowgreen;
+    text-align: center;
+}
+
+.cell-01 {
+    grid-column:1 / 3;
+    grid-row:1 / 3 ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:subgrid;
+}
+
+.cell-02 {
+    grid-column:1 / 2; 
+    grid-row: 3 / 6;
+}
+
+.subgrid {
+    background-color: blue;
+}
