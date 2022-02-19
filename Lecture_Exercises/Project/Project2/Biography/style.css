@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Libre+Baskerville&family=PT+Sans&family=Roboto:wght@400;900&display=swap');
 
 * {
     padding:0;
@@ -68,4 +68,68 @@ button {
 
 .site-categories .notification {
     margin-bottom: 3rem;
+}
+
+
+
+/* Content */
+
+.site-container {
+    display:flex;
+    flex-direction: column;
+    line-height: 1.3;
+    gap:1em;
+    font-size:14px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+hr {
+    height:2px;
+    background-color: #3C485E;
+    border:0px;
+    width:90%;
+}
+
+iframe {
+    height:1000px;
+    width:100%;
+    border:0;
+    background-color: white;
+}
+
+
+main {
+    margin-top:8px;
+    margin-bottom: 8px;
+    line-height: 1.8;
+    width:90%;
+}
+
+
+.site-container header {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #3C485E;
+}
+
+.sec-leadership ul {
+    margin-left:14px;
+}
+
+.sec-skill ul {
+    margin-left:14px;
+}
+
+.sec-skill {
+    margin-bottom: 8em;
+}
+
+img {
+    width:15%;
+    margin-bottom: 15px;
+}
+
+img:hover {
+    width:25%;
+    transition: 1s;
 }
