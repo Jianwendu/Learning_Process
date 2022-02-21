@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Libre+Baskerville&family=PT+Sans&family=Roboto:wght@400;700;1000&display=swap');
 
 * {
     padding:0;
@@ -68,4 +68,11 @@ button {
 
 .site-categories .notification {
     margin-bottom: 3rem;
+}
+
+
+/* Content */
+
+.site-content {
+    line-height: 2;
 }
