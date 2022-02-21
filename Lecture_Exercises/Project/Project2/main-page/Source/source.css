@@ -22,7 +22,8 @@ body {
 }
 
 .category {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
     gap:50px;
     justify-content: center;
 }
@@ -58,7 +59,7 @@ body {
 
 /* Content */
 
-.container .header{
+.container p{
     text-align: center;
     font-family:'Libre Baskerville', serif;
     font-size:30px;
