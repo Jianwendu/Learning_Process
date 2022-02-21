@@ -56,3 +56,15 @@ li {
     color:white;
     text-decoration: underline;
 }
+
+
+/* Footer */
+
+.footer {
+    margin-top:100px;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+}

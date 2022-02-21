@@ -110,7 +110,10 @@ body {
     width:80%;
 }
 
-
+.hidden {
+    color: black;
+    margin-top: 10px;
+}
 
 /* Footer */
 

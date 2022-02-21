@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Libre+Baskerville&family=PT+Sans&family=Roboto:wght@400;700;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;1000&family=Libre+Baskerville&family=PT+Sans&family=Roboto:wght@400;700;1000&display=swap');
+
 
 * {
     padding:0;
@@ -6,146 +7,139 @@
 }
 
 body {
-    height: 100%;
-    height: 100vh;
-    width:90%;
-    padding: 60px;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.3;
-    word-spacing: -0.003em; /*！改变字间距*/
-  }
+    font-size:16px;
+    font-family:'Libre Baskerville', serif;
+}
 
 /*! 设置header*/
 
-h1 {
-    text-transform:uppercase;
-    font-size:24px;
-    width: 180px;
-    margin-bottom:0.3em;
+header {
+    padding-left:100px;
+    padding-right:100px;
+    margin-top: 30px;
+    margin-bottom:80px;
+    background-color: white;
 }
 
-a.header {
-    color:black;
-    text-decoration: none;
-    transition: 1s;
+.category {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap:50px;
+    justify-content: center;
 }
 
-a.header:hover {
-    font-size:30px;
-    background-color: black;
-    color:white;
-}
-
-/*！设置button */ 
-
-button {
-    font-family: 'Roboto', sans-serif;
-    font-size:16px;
-  }
-
-.site-categories button {
-    display:block;
-    background: transparent;
+.category button {
+    background-color: transparent;
+    width:fit-content;
     border:0;
-    margin-bottom: 0.3em;
-    padding:0;
 }
 
-.site-categories .contact a{
+.category a  {
     text-decoration: none;
+    color:black;
+    font-weight: 500;
+    font-size:14px;
+    text-transform: uppercase;
+    font-family:'Libre Baskerville', serif;
+}
+
+.category .name {
+    font-weight: 1000;
+    color:#1C1253;
+}
+
+.category a:hover {
+    color: #a9a9a9;
+    transition: 300ms;
+}
+
+.category .biography {
     color:#a9a9a9;
-}
-
-.site-categories .biography a{
-    text-decoration: none;
-    color: black;
-}
-
-.site-categories .notification a{
-    text-decoration: none;
-    color: #a9a9a9;;
-}
-
-.site-categories .notification {
-    margin-bottom: 3rem;
 }
 
 
 
 /* Content */
 
-.photo {
-    background-image: url(photo1.jpg);
-    background-size: 150px;
-    display:inline-block;
+.site-container .head-name {
+    margin-top:100px;
+    display: block;
+    margin-bottom: 30px;
     text-align: center;
-    width:150px;
-    height:150px;
-    line-height: 150px;
-    margin-bottom: 15px;
-}
-
-.photo a {
-    color:white;
+    color:black;
     text-decoration: none;
+    font-size: 30px;
+    text-transform: capitalize;
 }
 
-.photo a:hover {
-    font-size:18px;
-    border:2px solid yellow;
-    background-color: black;
-    padding:5px;
-    transition: 0.5s;
-}
+.site-container .note {
+    color:#a9a9a9;
+    text-align:center;
+    font-size:16px;
+    margin-bottom: 30px;
 
+}
 
 .site-container {
-    display:flex;
-    flex-direction: column;
-    line-height: 1.3;
-    gap:1em;
     font-size:14px;
     font-family: 'Libre Baskerville', serif;
+}
+
+.site-container header{
+    padding-left: 210px;
+    padding-right: 210px;
+    margin:0;
+    padding-bottom:5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #3C485E;
 }
 
 hr {
     height:2px;
     background-color: #3C485E;
     border:0px;
-    width:90%;
-}
-
-iframe {
-    height:1000px;
-    width:100%;
-    border:0;
-    background-color: white;
+    margin-left: 210px;
+    margin-right: 210px;
 }
 
 
-main {
+.site-container main {
     margin-top:8px;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
     line-height: 1.8;
-    width:90%;
+    width:100%;
 }
 
-
-.site-container header {
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #3C485E;
+.site-container p {
+    padding-left: 210px;
+    padding-right: 210px;
 }
+
 
 .sec-leadership ul {
     margin-left:14px;
+    padding-left: 210px;
+    padding-right: 210px;
 }
 
 .sec-skill ul {
     margin-left:14px;
+    padding-left: 210px;
+    padding-right: 210px;
 }
 
 .sec-skill {
     margin-bottom: 8em;
 }
 
+/* Footer */
+
+.footer {
+    margin-top:100px;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+}
