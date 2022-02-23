@@ -32,3 +32,23 @@ header, footer {
 main {
     flex:1;
 }
+
+.animation {
+    height:100px;
+    width:100px;
+    background-color: red;
+    animation:colors 3.5s linear infinate;
+}
+
+@keyframes colors {
+    0% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: bisque;
+    }
+
+    100% {
+        background-color: yellow;
+    }
+}
