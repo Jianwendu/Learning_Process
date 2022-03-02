@@ -1,0 +1,34 @@
+* {
+    padding:0;
+    margin:0;
+}
+
+.box {
+    width:200px;
+    height:200px;
+    background: tomato;
+    color:white;
+    text-align: center;
+    line-height: 200px;
+}
+
+.box:hover {
+    animation:change 4s ease 100;
+
+}
+
+/* css shape*/
+
+@keyframes change {
+    0% {
+        transform:translateX(0px)
+    }
+    50% {
+        transform:translateX(300px);
+        border-radius:50%;
+        background:black;
+    }
+    100% {
+        transform:translateX(0px);
+    }
+}
