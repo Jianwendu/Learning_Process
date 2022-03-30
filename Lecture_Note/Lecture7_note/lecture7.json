@@ -1,0 +1,2 @@
+const div = querySelector("div");
+div.innerHTML = “<p>Hey!</p>”;
