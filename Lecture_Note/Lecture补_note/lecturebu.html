@@ -33,7 +33,31 @@
         classList API
         classList.add or classList.remove
 
+        We can use the node properties to reset the HTML or text of an element: innerHTML, outerHTML, innerText, outerText, textContent
+        div.innerHTML = “<p>Hey!</p>”;
+        div.style[“width”] = “100px”;
+
+
+        # 加入新的元素
+        const listItem = document.createElement("li");
+        listItem.classList.add("XXX");
+        ul.appendChild(listItem); # Append created element to HTML
+        # 减去元素
+        let deleteItem = div.removeChild(listItem);
     -->
-    
+
+    <!--
+        # event handling
+        object.addEventListener(‘click’, actionFn) 目标元素 + 动作 + 触发内容
+
+        # type of event
+        click 
+        hover
+        scroll
+        keydown
+
+        
+    -->
+
 </body>
 </html>
