@@ -26,18 +26,6 @@ li a {
     text-decoration: none;
 }
 
-button {
-    background:none;
-    border:0ch;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-}
-
-button:hover {
-    cursor: pointer;
-}
-
 .menue {
     text-align: center;
     height:30px;
