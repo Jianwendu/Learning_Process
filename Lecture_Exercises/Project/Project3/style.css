@@ -38,6 +38,10 @@ button:hover {
     cursor: pointer;
 }
 
+button:focus {
+    color:cornflowerblue;
+}
+
 .menue {
     text-align: center;
     height:30px;
