@@ -62,7 +62,7 @@ button:focus {
 .searchbox {
     display: flex;
     width:430px;
-    margin-bottom:30px;
+    margin-bottom:10px;
   }
 
 .input-search {
@@ -105,6 +105,29 @@ button:focus {
     opacity: 1;
     visibility: visible;
   }
+
+
+.container .none {
+    display:none;
+}
+
+/* sort */
+.sortbox {
+    display:flex;
+    margin-bottom: 5px;
+}
+
+.sortbox button {
+    width:120px;
+    text-align: start;
+    font-size:14px;
+    text-decoration: underline;
+}
+
+.sortbox button:focus {
+    color:#61BFAD;
+}
+
 
 /* main */
 .container {
