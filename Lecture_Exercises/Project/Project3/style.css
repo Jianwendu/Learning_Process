@@ -123,6 +123,14 @@ button:focus {
     object-fit: cover;
 }
 
+.container .show {
+    opacity: 1;
+}
+
+.container .hide {
+    display:none;
+}
+
 
 /* footer */
 .contact {
