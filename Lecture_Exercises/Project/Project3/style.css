@@ -159,6 +159,18 @@ button:hover {
     padding:inherit;
     margin-left:30px;
     margin-top: 5px;
+    animation:sizechange 0.7s ease-in-out;
+}
+
+@keyframes sizechange {
+    0% {
+        width:0;
+        height:0;
+    }
+    100% {
+        width:fit-content;
+        height:fit-content;
+    }
 }
 
 .container .detail {
@@ -170,7 +182,16 @@ button:hover {
     padding-left:10px;
     animation:ease-in;
     color:black;
-    transition-delay: 1s;
+    animation:change 1.5s ease-in-out;
+}
+
+@keyframes change {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .container p:hover{

@@ -131,7 +131,6 @@ function detailfn(event) {
             ulcontent.classList.add('content');
             ulcontent.appendChild(contentlist);
         }
-        gallery[id].classList.add('Big');
     }
     else {
         let element = document.querySelector('.container').querySelectorAll('ul');
