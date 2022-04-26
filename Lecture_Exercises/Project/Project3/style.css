@@ -61,7 +61,6 @@ button:hover {
 /* searchbox */
 .searchbox {
     display: flex;
-    width:430px;
     margin-bottom:10px;
   }
 
@@ -77,6 +76,7 @@ button:hover {
     outline:0;
     padding: 0;
     transition: color 120ms;
+    width: 430px;
 }
 
 .search-cancel {
